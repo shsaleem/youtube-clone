@@ -1,0 +1,5 @@
+.explore-page {
+  height: calc(100vh - 70px);
+  display: flex;
+  background-color: #f9f9f9;
+}

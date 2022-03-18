@@ -1,0 +1,22 @@
+.search-form {
+  display: flex;
+  height: 45px;
+  border: 1px solid #ddd;
+}
+
+.search-form input {
+  width: 600px;
+  padding: 10px;
+  height: 100%;
+}
+
+.search-form input:focus {
+  outline: none;
+  border: 1px solid #ddd;
+}
+
+.search-form button {
+  height: 100%;
+  width: 60px;
+  border: none;
+}
