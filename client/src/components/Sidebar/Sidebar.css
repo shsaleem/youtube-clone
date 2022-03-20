@@ -1,0 +1,40 @@
+.sidebar {
+  height: 100%;
+  width: 20%;
+  background-color: white;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 12px 25px;
+}
+
+.nav-link:hover {
+  background: lightgray;
+  cursor: pointer;
+}
+
+.nav-link p {
+  font-size: 14px;
+  margin-left: 25px;
+  color: black;
+}
+
+.nav .active {
+  background: #e5e5e5;
+  font-weight: 600;
+}
+
+.nav hr {
+  height: 1px;
+  background-color: #e5e5e5;
+  border: none;
+}

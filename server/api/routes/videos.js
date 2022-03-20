@@ -2,7 +2,11 @@ import express from "express";
 const router = express.Router();
 import multer from "multer";
 
-import { getAllVideos, createVideo } from "../controllers/videos.js";
+import {
+  getAllVideos,
+  createVideo,
+  deleteVideo,
+} from "../controllers/videos.js";
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -18,5 +22,7 @@ const upload = multer({ storage: storage });
 router.get("/", getAllVideos);
 
 router.post("/upload", upload.single("thumbnail"), createVideo);
+
+router.delete("/:videoId", deleteVideo);
 
 export default router;
